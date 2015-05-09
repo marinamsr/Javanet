@@ -1,2 +1,2 @@
 # Javanet
-Reserva de citas médicas
+Asignación y control de consultores
