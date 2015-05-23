@@ -61,6 +61,15 @@ public class SimpleLoginMainView extends CustomComponent implements View {
 		    		   navigator.navigateTo(PreGenerarSolicitudView.NAME);
 		    	   }
 		    	  
+                    if(selectedItem.getText().equals("Registrar Consultor")){
+		    		   
+		    		   Navigator navigator = getUI().getNavigator();
+		    		   navigator.addView(RegistrarConsultorView.NAME, RegistrarConsultorView.class);
+		    		   //navigator.addView(PreGenerarSolicitudMainView.NAME,PreGenerarSolicitudMainView.class);
+		   	        
+		    		   navigator.navigateTo(RegistrarConsultorView.NAME);
+		    	   }
+		    	   
 	            if (previous != null)
 	            	previous.setStyleName(null);
 		            //selectedItem.setStyleName("highlight");

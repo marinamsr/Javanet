@@ -38,9 +38,9 @@ public class GenerarSolicitudView extends CustomComponent implements View,
         Button.ClickListener {
 
 	public static final String NAME = "";
-
-    Label text = new Label();
-    SolicitudService service = SolicitudService.createDemoService();
+	Label text = new Label();
+	
+	    SolicitudService service = SolicitudService.createDemoService();
 
     Button logout = new Button("Logout", new Button.ClickListener() {
 

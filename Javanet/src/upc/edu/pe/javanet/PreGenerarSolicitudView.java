@@ -19,9 +19,9 @@ import com.vaadin.ui.Table;
 
 public class PreGenerarSolicitudView extends CustomComponent implements View {
 
-      
 	public static final String NAME = "PreGenerarSolicitud";
 	private final Label text = new Label();
+  
     
 	 Button logout = new Button("Logout", new Button.ClickListener() {
 
