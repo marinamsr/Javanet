@@ -19,14 +19,13 @@ import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.ComboBox;
 import com.vaadin.ui.TextArea;
 
-public class GenerarSolicitudMainView extends CustomComponent implements View {
+public class PreGenerarSolicitudMainView extends CustomComponent implements View {
 
-   
-    public GenerarSolicitudMainView() {
+    
+	public PreGenerarSolicitudMainView() {
        
     	//setSizeFull();
-    			
-		
+   	
     }
 
 	@Override
@@ -35,5 +34,5 @@ public class GenerarSolicitudMainView extends CustomComponent implements View {
 		
 	}
 
-    
+   
 }

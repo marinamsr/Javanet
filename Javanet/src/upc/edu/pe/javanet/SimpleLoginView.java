@@ -24,7 +24,8 @@ public class SimpleLoginView extends CustomComponent implements View,
     private final PasswordField password;
 
     private final Button loginButton;
-
+    
+    
     public SimpleLoginView() {
         setSizeFull();
 
@@ -32,7 +33,7 @@ public class SimpleLoginView extends CustomComponent implements View,
         user = new TextField("Usuario:");
         user.setWidth("300px");
         user.setRequired(true);
-        user.setInputPrompt("Su usuario (ej. gestcon@prueba.com)");
+        user.setInputPrompt("Su usuario (ej. javanet@prueba.com)");
         //user.addValidator(new EmailValidator(
         //        "Usuario debe ser un correo electrónico"));
         user.setInvalidAllowed(false);
@@ -126,9 +127,8 @@ public class SimpleLoginView extends CustomComponent implements View,
             getSession().setAttribute("user", username);
 
             // Navigate to main view
-            //getUI().getNavigator().navigateTo(SimpleLoginMainView.NAME);
-            getUI().getNavigator().navigateTo(GenerarSolicitudMainView.NAME);
-
+            
+            getUI().getNavigator().navigateTo(SimpleLoginMainView.NAME);
         } else {
 
             // Wrong password clear the password field and refocuses it

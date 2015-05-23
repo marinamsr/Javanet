@@ -33,4 +33,27 @@
   @include valo;
 
   // Insert your own theme rules here
+  .mybarmenu .v-menubar-menuitem-highlight {
+    background: #000040; /* Dark blue */
 }
+
+
+.bienvenido {
+	Font-size: 35px;
+	font-weight: bold;
+	color:#000080;
+}
+
+.titulo {
+	Font-size: 25px;
+	font-weight: bold;
+	color:#000080;
+}	
+
+.mypanel{
+    background: #000040; /* Dark blue */
+}
+	
+}
+
+

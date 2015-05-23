@@ -23,35 +23,21 @@ public class LogeoUI extends UI {
 	 @Override
 	    protected void init(VaadinRequest request) {
 
-	        /*
+	       
+		 
+		 /*
 	         * Create a new instance of the navigator. The navigator will attach
 	         * itself automatically to this view.
 	         */
 	        new Navigator(this, this);
-	        
-	      //getUI().getNavigator().addView(GenerarSolicitudView.NAME, GenerarSolicitudView.class);
-
-	        /*
-	         * Add the main view of the application
-	         */
-	        //getUI().getNavigator().addView(GenerarSolicitudMainView.NAME,
-	        //		GenerarSolicitudMainView.class);
-
-	        /*
-	         * The initial log view where the user can login to the application
-	         */
+	          
+	    
 	        getNavigator().addView(SimpleLoginView.NAME, SimpleLoginView.class);
-	        //getNavigator().addView(GenerarSolicitudView.NAME, GenerarSolicitudView.class);
-
-	        /*
-	         * Add the main view of the application
-	         */
+	       
 	        getNavigator().addView(SimpleLoginMainView.NAME,
 	                SimpleLoginMainView.class);
 	        
-	        //getNavigator().addView(GenerarSolicitudMainView.NAME,
-	    	//        		GenerarSolicitudMainView.class);
-
+	       
 	        /*
 	         * We use a view change handler to ensure the user is always redirected
 	         * to the login view if the user is not logged in.
